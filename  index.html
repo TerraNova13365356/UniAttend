@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Login Page</title>
+  <link rel="stylesheet" href="loginpg.css">
+</head>
+
+<body>
+  <div class="container">
+     
+      <h2>Login</h2>
+      <div class="input-group">
+        <label for="username">Student/Faculty Id:</label>
+        <input type="text" id="Student/Faculty_Id" name="Student_Faculty_Id" required>
+      </div>
+      <div class="input-group">
+        <label for="password">Password:</label>
+        <input type="password" id="password" name="password" required>
+      </div>
+
+      <div class="remember-forgot">
+        <label><input type="checkbox">Remember me</label>
+
+      </div>
+      <div class="input-group">
+        <a href="forgot_password.php">Forgot password?</a>
+      </div>
+      <button id="login">Login</button>
+      <div class="register-link">
+        <p>Don't have an account? <a href="signup.html">Signup</a></p>
+      </div>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+      <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+      <script src="login.js"></script>
+     
+  </div>
+</body>
+
+</html>

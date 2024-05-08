@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Duty Leave Requests</title>
+    <link rel="stylesheet" href="Duty_leave.css">
+    <link rel="stylesheet" href="utilities.css">
+</head>
+
+<body>
+    <nav id="navbar"></nav>
+    <div id="container">
+        <div id="duty_leave_requests">
+            <div id="inner">
+                <section id="reuests_head">
+                    
+                    <h1>Total Duty Leave Requests</h2>
+                </section>
+                 
+            </div>
+
+        </div>
+        <div id="block">
+            <h3>Select a Student to see the Details</h3>
+        </div>
+        <div id="right">
+            <div id="stud_details">
+                <h1>Student Details</h1>
+                
+                 <button id="cancel" onclick="hide()">❎</button>
+                <div id="name" class="detail_block">
+                    <h2>Name:</h2>
+                    <h3 id="student_name" class="entries">Hello world</h2>
+
+                </div><br>
+                <div id="reg_no" class="detail_block">
+                    <h2>Register No:</h2>
+                    <h3 id="student_reg" class="entries"></h2>
+
+                </div> <br>
+                <div id="doc" class="detail_block">
+                    <h2>Document:</h2>
+                    <button id="student_doc" class="entries">
+
+                </div>
+
+
+
+
+            </div>
+            <div id="panel">
+                <button id="approve_duty" class="decision_btn">Approve</button>
+                <button id="decline_duty" class="decision_btn">Decline</button>
+            </div>
+        </div>
+    </div>
+     
+    <footer>
+
+    </footer>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-app.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-database.js"></script>
+    <script src="https://www.gstatic.com/firebasejs/8.10.1/firebase-storage.js"></script>
+    <script src="Duty_leave.js"></script>
+     
+</body>
+
+</html>

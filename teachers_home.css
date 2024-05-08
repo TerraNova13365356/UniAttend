@@ -1,0 +1,160 @@
+:root {
+    --primary: #243B55; /* Dark blue */
+    --secondary: #F9A825; /* Light orange */
+    --third: #F2F2F2; /* Very light gray */
+    --imp: #FFFFFF; /* White */
+}
+
+body {
+    background-color: var(--primary);
+     
+    font-family: "Open Sans", sans-serif;
+    margin: 0;
+    padding: 20px;
+}
+
+.hero {
+    background: linear-gradient(to right, var(--primary), rgba(var(--primary), 0.8));
+    height: 50vh;
+    background-size: cover;
+    background-position: center;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.hero img {
+    width: 100%; /* Adjust image width if needed */
+}
+
+nav {
+    
+    color: var(--imp);
+    padding: 15px 20px;
+    display: flex;
+    justify-content: end;
+}
+
+nav a {
+    color: var(--imp);
+    text-decoration: none;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    font-family: "Lato", serif;
+}
+
+nav a i {
+    margin-right: 5px;
+}
+
+nav a:hover {
+    background-color: rgba(var(--secondary), 0.8);
+}
+
+.btn {
+    background: linear-gradient(to right, var(--primary), rgba(var(--primary), 0.9));
+    color: var(--imp);
+    padding: 15px 30px;
+    border: 2px solid white;
+    border-radius: 10px;
+    margin: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    display: inline-block;
+    transition: 0.3s;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    font-weight: 800;
+    width: 230px;
+}
+
+ 
+
+.btn:hover {
+    transform: translateY(-3px);
+    background-color: white;
+    color: #0066ff;
+     
+}
+
+.container {
+    display: flex;
+    flex-direction: column;
+    justify-content: start;
+    align-items: center;
+    margin-top: 14%;
+    
+}
+
+#title{
+    font-size: 2rem;
+    font-weight:900;
+}
+#sub_title{
+    font-size: 1rem;
+}
+.container p {
+    text-align: center;
+    margin-bottom: 15px;
+    color:white;
+    font-size: 16px; /* Adjust description text size */
+}
+
+.cta-btn {
+    background-color: var(--secondary); /* Change color */
+    color: var(--imp);
+    padding: 20px 40px;
+    font-size: 18px; /* Increase CTA button font size */
+    border:3px solid white;
+    border-radius: 5px; /* Add rounded corners */
+    text-decoration: none;
+    transition: 0.3s; /* Add hover effect */
+    font-weight: 500; /* Slightly bolder font for CTA */
+    box-shadow: 0 3px 5px rgba(0, 0, 0, 0.1); /* Subtle shadow for CTA */
+}
+
+ 
+
+
+
+
+
+.navigation {
+    background-color: var(--secondary);
+    color: var(--imp);
+    padding: 20px;
+    display: flex;
+    flex-direction: column; /* Stack links vertically */
+    position: absolute; /* Position off-screen initially */
+    top: 0; /* Align to top of the page */
+    left: -100%; /* Slide in from left at 100% width */
+    width: 100%; /* Full width of the screen */
+    height: 100vh; /* Full viewport height */
+    transition: transform 0.3s ease-in-out; /* Smooth slide animation */
+}
+
+.navigation a {
+    color: var(--imp);
+    text-decoration: none;
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    font-family: "Lato", serif;
+}
+
+.navigation a:hover {
+    background-color: rgba(var(--secondary), 0.8);
+}
+
+.menu-toggle {
+    background-color: var(--primary);
+    color: var(--imp);
+    border: none;
+    padding: 10px;
+    cursor: pointer;
+    display: none; /* Hide on larger screens initially */
+}
+
+.menu-toggle i {
+    font-size: 24px;
+}
